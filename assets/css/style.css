@@ -1,0 +1,463 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family:'Roboto',sans-serif;
+}
+
+.wrapper{
+    width: 100vw;
+}
+
+.header{
+    width:100%;
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    right: 0;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.navigation-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.navigation-list.show-mobile{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navigation-item{
+    background-color: #000;
+    height: 100%;
+    padding: 12px 24px;
+    color: #fff;
+}
+
+.show-mobile{
+    /* width: 100vw; */
+    display: block !important;
+}
+
+.navigation-item-link{
+    text-decoration: none;
+    font-size:14px;
+    font-weight: 400;
+    color: #fff;
+    display:flex;
+}
+
+.navigation-item:hover  {
+    background-color: rgba(214, 214, 214, 0.8);
+    color:#000;
+}
+.navigation-item:hover .navigation-item-link{
+    color: #000;
+}
+
+.navigation-item-more{
+    position: relative;
+}
+
+.navigation-item-more:hover .more-list{
+    display: block;
+}
+
+.more-list{
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.more-item{
+    width: 150px;
+}
+
+.more-item-link{
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color:#000;
+    font-size: 14px;
+    padding: 10px 16px;
+    text-align: left;
+}
+
+.more-item-link:hover{
+    background-color: rgb(216, 214, 214);
+}
+
+.navigation-item-link-icon{
+    font-size: 14px;
+    height: 20px;
+    margin-left: 3px;
+}
+
+.navigation-search{
+    z-index: 99;
+    color:#fff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-search-icon{
+    padding: 0 20px;
+}
+
+.navigation-search:hover{
+    background-color: rgb(251, 71, 51);
+}
+
+.navigation-bars:hover{
+    color: #000;
+    background-color: rgb(216, 214, 214);
+}
+
+.slider{
+    position: relative;
+    margin-top: 46px;
+    width: 100%;
+    /* padding-top:50%;
+    background:url('https://bloganchoi.com/wp-content/uploads/2019/10/m-pire.jpg') top center / cover no-repeat; */
+}
+
+.slider__img{
+    width: 100%;
+}
+
+.slider__content{
+    position: absolute;
+    left:50%;
+    bottom: 50px;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.slider__title{
+    font-size:20px;
+    font-weight: 400;
+    color:#fff;
+}
+
+.slider__decreption{
+    font-size: 14px;
+    color:#fff;
+    font-weight: 600;
+}
+
+/* .content{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 10px;
+} */
+
+.grid{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.theband{
+    padding: 80px 0;
+}
+
+.theband-heading{
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color:#000;
+}
+
+.theband-slogan{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #666;
+    font-style: italic;
+}
+
+.theband-content{
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 14px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.theband-members{
+    width: 100%;
+}
+
+.theband-member-item{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.theband-name{
+    margin: 18px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.theband-member-img{
+    width: 153px;
+    height: 153px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+@media (max-width: 575.98px) { 
+    .theband-member-img{
+        width: 288px;
+        height: 288px;
+    }
+}
+
+.tour-dates{
+    padding: 80px 0;
+    background-color: #000;
+}
+
+.tour-dates-heading{
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color:#fff;
+}
+
+.tour-dates-slogan{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #999;
+    font-style: italic;
+}
+
+.tour-list{
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+.tour-item{
+    background-color: #fff;
+    padding: 10px 10px;
+    border-bottom: 1px solid #999;
+}
+
+.tour-item-month{
+    font-size: 14px;
+    color: #666;
+    margin-right: 20px;
+}
+
+.tour-item-check{
+    font-size: 14px;
+    background-color: rgb(251, 56, 30);
+    padding: 3px;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.tour-adress-list{
+    justify-content: space-between;
+}
+
+.tour-adress-item{
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.tour-adress-img{
+    object-fit:cover;
+}
+
+.tour-adress-img:hover{
+    opacity: 0.8;
+}
+
+.tour-adress-warrap{
+    background-color: #fff;
+    padding: 20px 16px;
+}
+
+.tour-adress-title{
+    font-size: 14px;
+    margin-bottom: 15px;
+    color:#000;
+}
+
+.tour-adress-day{
+    display: block;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.tour-adress-content{
+    display: block;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 12px;
+    line-height: 22px;
+}
+
+.tour-adress-btn{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    background-color: #000;
+    max-width: 107px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.tour-adress-btn:hover{
+    background-color: rgba(214, 214, 214, 0.8);
+    color:#000;
+}
+
+.contact{
+    padding: 80px 0;
+}
+
+.contact-heading{
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color:#000;
+}
+
+.contact-slogan{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #666;
+    font-style: italic;
+}
+
+.contact-container{
+    justify-content: space-between;
+}
+
+.contact-list{
+    list-style: none;
+}
+
+.contact-item{
+    font-size: 16px;
+    line-height: 36px;
+    color: #000;
+    text-align: left;
+}
+
+.contact-item-icon{
+    font-size:17px;
+    margin-right: 10px;
+    width: 20px;
+}
+
+.contact-input-info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.contact-input-info input{
+    border: 1px solid rgb(204, 201, 201);
+    padding: 10px 10px;
+    font-size: 14px;
+    color: #666;
+    width: 48%;
+}
+
+.contact-input-message input{
+    border: 1px solid rgb(204, 201, 201);
+    padding: 10px 10px;
+    font-size: 14px;
+    color: #666;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contact-btn a{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 2px;
+    margin-left: auto;
+}
+
+.contact-btn a:hover{
+    background-color: rgba(214, 214, 214, 0.8);
+    color:#000;
+}
+
+.footer{
+    border-top: 3px solid #000;
+    padding: 80px 0;
+}
+
+.footer-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-contact i{
+    font-size: 18px;
+    padding: 0 10px;
+    color: #666;
+}
+
+.footer-title h3{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+}
+
+
+
